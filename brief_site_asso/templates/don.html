@@ -1,0 +1,27 @@
+{% extends 'base.html'%}
+
+{% block content %}
+
+<h2>Faîtes nous un Don</h2>
+
+<form action="{{url_for('confirmation')}}" method="post">
+    <fieldset>
+        <legend>Formulaire de donation</legend>
+            <label for="nom">Nom</label>
+            <input id="nom" name="nom" placeholder="Jean" pattern="[A-Za-z]+" required><br>
+            <label for="prenom">Prenom</label>
+            <input id="prenom", name="prenom" type="prenom" placeholder="Michel" pattern="[A-Za-z]+" required><br>
+            <label for="adresse">Adresse</label>
+            <input id="adresse", name="adresse" type="adresse" required><br>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required="" pattern="[a-zA-Z]*.[a-zA-Z]*@[a-zA-Z]*.[a-zA-Z]*" required><br>
+            <label for="don">Don</label>
+            <input id="don", name="don" type="don" pattern="[0-9]+" required><br>
+            <input type="checkbox" id="conditions" required>
+            <label for="conditions">J'ai lu et accepté les <a href="{{url_for('conditions')}}">conditions d'utilisation</a>.</label><br>
+            <input type="submit" value="Valider">
+    </fieldset>
+</form> 
+
+
+{% endblock %}

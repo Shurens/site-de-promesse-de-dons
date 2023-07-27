@@ -1,0 +1,25 @@
+{% extends 'base.html'%}
+
+{% block content %}
+
+<h2>Informations de la cagnotte</h2>
+
+    <table>
+        <tr>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Email</th>
+            <th>Montant donné</th>
+        </tr>
+        {% for donnee in informations %}
+        <tr>
+            <td>{{ donnee[0] }}</td>
+            <td>{{ donnee[1] }}</td>
+            <td>{{ donnee[2] }}</td>
+            <td>{{ donnee[3] }} €</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <p class="paragraphe">Total d'argent donné : <b>{{ total }} € </b></p>
+    <p class="paragraphe">(Ne montrez pas ce nombre à nos confrères, ils risquent d'être en PLS)</p>
+{% endblock %}

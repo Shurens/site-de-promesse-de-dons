@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    padding: 0;  
+    font-family: Arial, sans-serif;
+    background-color: #ceddff;
+} 
+
+
+
+header {
+    background-color: #ceddff;
+    text-align: center;
+}
+
+.logo {
+    position: relative;
+}
+
+.logo img {
+    width: 100%;
+    height: 15em;
+}
+
+.logo h1 {
+    position: absolute; /* Positionnement absolu par rapport à l'élément parent .logo */
+    font-family: Times New Roman;
+    top: 50%; /* Place le haut du texte à 50% du haut de l'élément parent */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Décale le texte de 50% de sa propre largeur vers la gauche et 50% de sa propre hauteur vers le haut, centré donc verticalement et horizontalement */
+    font-size: 5em;
+    margin: 0;
+    color:rgb(252, 238, 42);  
+}
+
+nav {
+    background-color: #1c1c1d;
+    text-align: center; 
+    padding: 0.1em;
+}
+
+#bouton-don {
+    background-color: red;
+    padding: 1em;
+}
+
+nav li {
+    display: inline-block;  /*dispose les éléments sur une ligne*/
+    margin-right: 1.5em;  /* écarte les 4 bouttons entre eux */
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none; /* Retire le soulignement */
+    font-size: 1em;
+    transition: color 0.5s ease;
+}
+
+nav li a:hover {
+    color: #d5e925;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1c1c1d;
+    text-align: center;
+    padding: 0.2em;
+}
+
+footer .footer_p {
+    margin: 0;
+    font-size: 1em;
+    color: #fff;
+    padding: 0.1em;
+}
+
+.paragraphe {
+    max-width: 60%;
+    margin: auto;
+    padding: 0.5em;
+    text-align: center;
+}
+
+h2 {
+    max-width: 60%;
+    margin: auto;
+    font-size: 2em;
+    padding: 1em;
+    color: #595a01;
+    text-align: center;
+}
+
+
+fieldset {
+    border: 0.2em solid #333;
+    border-radius: 3em;
+    padding: 2em;
+    max-width: 50%;
+    margin: auto;
+    margin-bottom: 5em;
+}
+
+legend {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0.2em;
+    border: 0.3em solid #333;
+    border-radius: 1em;
+    background-color: #333;
+    color: #fff;
+}
+
+label {
+    display: block;
+    margin-top: 0.2em;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+label[for="conditions"] {
+    text-align: center;
+} 
+  
+
+input[type="checkbox"]{
+    cursor: pointer;
+}
+  
+
+input {
+    display: block;  /* Les éléments prennent toute la largeur et ça revient à la ligne à chaque nous block*/
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border: 0.2em solid #030000; 
+    border-radius: 1em;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    margin-top: 2em;
+    cursor: pointer; /*Transforme la souris en un pointer */
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+
+th {
+    background-color: #1c1c1d;
+    color: #fff;
+    padding: 0.5em;
+}
+  
+  
+tr {
+    border-bottom: 0.2em solid #ccc;
+}
+  
+  
+td {
+    padding: 0.5em;
+    border-right: 0.2em solid #ccc;
+}
+  
+  
+th,td {
+    text-align: left;
+}
